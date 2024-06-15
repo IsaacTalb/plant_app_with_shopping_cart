@@ -53,8 +53,8 @@ class _CartPageState extends State<CartPage> {
                   height: 20,
                 ),
                 Text(
-                  textDirection: TextDirection.rtl,
-                  '"Your shopping cart is empty! "',
+                  textDirection: TextDirection.ltr,
+                  '" Your shopping cart is empty! "',
                   style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'Verdana',

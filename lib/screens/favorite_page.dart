@@ -31,8 +31,8 @@ class _FavoritePageState extends State<FavoritePage> {
                   height: 20,
                 ),
                 Text(
-                  textDirection: TextDirection.rtl,
-                  '"Your favorites list is empty! "'.toUpperCase(),
+                  textDirection: TextDirection.ltr,
+                  '" Your favorites list is empty! "',
                   style: TextStyle(
                       fontSize: 20,
                       fontFamily: 'Verdana',

@@ -164,8 +164,8 @@ class _DetailPageState extends State<DetailPage> {
                   ),
                   const SizedBox(height: 15),
                   Text(
-                    plantList[widget.plantId].decription,
-                    textDirection: TextDirection.rtl,
+                    plantList[widget.plantId].description,
+                    textDirection: TextDirection.ltr,
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       color: Constants.blackColor.withOpacity(0.7),
@@ -209,18 +209,18 @@ class _DetailPageState extends State<DetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           PlantFeature(
-                            title: 'اندازه‌گیاه',
+                            title: 'Plant Size',
                             plantFeature: plantList[widget.plantId].size,
                           ),
                           PlantFeature(
-                            title: 'رطوبت‌هوا',
+                            title: 'Humidity',
                             plantFeature: plantList[widget.plantId]
                                 .humidity
                                 .toString()
                                 .farsiNumber,
                           ),
                           PlantFeature(
-                            title: 'دمای‌نگهداری',
+                            title: 'Temperature',
                             plantFeature: plantList[widget.plantId]
                                 .temperature
                                 .farsiNumber,
@@ -318,9 +318,9 @@ class _DetailPageState extends State<DetailPage> {
                                   child: Center(
                                     child: plantList[widget.plantId].isSelected
                                         ? Text(
-                                            'گیاه ${plantList[widget.plantId].plantName} با موفقیت به سبد خرید اضافه شد',
+                                            'Plant ${plantList[widget.plantId].plantName} added to cart successfully',
                                             textAlign: TextAlign.justify,
-                                            textDirection: TextDirection.rtl,
+                                            textDirection: TextDirection.ltr,
                                             style: const TextStyle(
                                               fontFamily: 'CloudSoftB',
                                               fontWeight: FontWeight.bold,
@@ -328,9 +328,9 @@ class _DetailPageState extends State<DetailPage> {
                                             ),
                                           )
                                         : Text(
-                                            'گیاه ${plantList[widget.plantId].plantName} با موفقیت از سبد خرید حذف شد',
+                                            'Plant${plantList[widget.plantId].plantName} removed from cart successfully',
                                             textAlign: TextAlign.justify,
-                                            textDirection: TextDirection.rtl,
+                                            textDirection: TextDirection.ltr,
                                             style: const TextStyle(
                                               fontFamily: 'CloudSoftB',
                                               fontWeight: FontWeight.bold,
@@ -357,7 +357,7 @@ class _DetailPageState extends State<DetailPage> {
                       );
                     },
                     child: const Text(
-                      'افزودن به سبد خرید',
+                      'Add to Cart',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Lalezar',

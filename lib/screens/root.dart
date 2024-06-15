@@ -75,8 +75,9 @@ class _RootPageState extends State<RootPage> {
                 style: TextStyle(
                     color: Constants.blackColor,
                     fontFamily: 'Verdana',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500),
+                    fontSize: 20,
+                    height: 2.5,
+                    fontWeight: FontWeight.w600),
               ),
             ],
           ),

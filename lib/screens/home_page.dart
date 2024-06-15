@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       const Expanded(
                         child: Directionality(
-                          textDirection: TextDirection.rtl,
+                          textDirection: TextDirection.ltr,
                           child: TextField(
                             textAlign: TextAlign.start,
                             style: TextStyle(
@@ -64,7 +64,8 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 14,
                             ),
                             decoration: InputDecoration(
-                              contentPadding: EdgeInsets.only(right: 5),
+                              contentPadding:
+                                  EdgeInsets.only(left: 5, right: 3),
                               hintText: 'Search for plants',
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
@@ -83,8 +84,8 @@ class _HomePageState extends State<HomePage> {
             ),
             // Category
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 1),
-              height: 60,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              height: 50,
               width: size.width,
               child: ListView.builder(
                 reverse: true,
@@ -103,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                         _plantType[index],
                         style: TextStyle(
                           fontFamily: 'verdana',
-                          fontSize: 12,
+                          fontSize: 13,
                           fontWeight: selectedIndex == index
                               ? FontWeight.bold
                               : FontWeight.w400,

@@ -1,0 +1,113 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "animated_bottom_navigation_bar",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/animated_bottom_navigation_bar-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "carousel_slider",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/carousel_slider-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "characters",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/characters-1.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "collection",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "cupertino_icons",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "flutter",
+      "rootUri": "file:///Users/isaactalb/Downloads/flutter/packages/flutter",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "flutter_lints",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/isaactalb/Downloads/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "lints",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/lints-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "material_color_utilities",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/material_color_utilities-0.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/meta-1.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "mobile_scanner",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/mobile_scanner-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "page_transition",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/page_transition-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "sky_engine",
+      "rootUri": "file:///Users/isaactalb/Downloads/flutter/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "vector_math",
+      "rootUri": "file:///Users/isaactalb/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "plant_app",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    }
+  ],
+  "generated": "2024-06-15T10:33:30.954642Z",
+  "generator": "pub",
+  "generatorVersion": "3.4.3",
+  "flutterRoot": "file:///Users/isaactalb/Downloads/flutter",
+  "flutterVersion": "3.22.2",
+  "pubCache": "file:///Users/isaactalb/.pub-cache"
+}

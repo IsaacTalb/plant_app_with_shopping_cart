@@ -1,0 +1,1 @@
+ /Users/isaactalb/development/Github-repo-project/plant_app_with_shopping_cart/.dart_tool/flutter_build/3d93cb9f6caafcab9bf6c47f90baba57/native_assets.yaml: 
