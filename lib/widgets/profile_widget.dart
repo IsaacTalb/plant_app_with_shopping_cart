@@ -30,7 +30,7 @@ class OptionWidget extends StatelessWidget {
                 style: TextStyle(
                   color: Constants.blackColor,
                   fontSize: 20,
-                  fontFamily: 'iranSans',
+                  fontFamily: 'Verdana',
                   fontWeight: FontWeight.w600,
                 ),
               ),

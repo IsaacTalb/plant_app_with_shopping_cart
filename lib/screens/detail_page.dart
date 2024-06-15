@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/const/constants.dart';
 import 'package:plant_app/models/plant.dart';
 import 'package:plant_app/screens/root.dart';
-
 import 'package:plant_app/widgets/extensions.dart';
 
 class DetailPage extends StatefulWidget {
@@ -115,7 +114,7 @@ class _DetailPageState extends State<DetailPage> {
                     plantList[widget.plantId].plantName,
                     style: TextStyle(
                         color: Constants.primaryColor,
-                        fontFamily: 'Lalezar',
+                        fontFamily: 'Verdana',
                         fontSize: 30,
                         fontWeight: FontWeight.bold),
                   ),
@@ -130,10 +129,10 @@ class _DetailPageState extends State<DetailPage> {
                             plantList[widget.plantId]
                                 .rating
                                 .toString()
-                                .farsiNumber,
+                                .englishNumber,
                             style: TextStyle(
                                 color: Constants.primaryColor,
-                                fontFamily: 'Lalezar',
+                                fontFamily: 'Verdana',
                                 fontSize: 23,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -141,20 +140,27 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                       Row(
                         children: [
-                          SizedBox(
-                            height: 19,
-                            child: Image.asset(
-                                'assets/images/PriceUnit-green.png'),
-                          ),
-                          const SizedBox(width: 10),
+                          const SizedBox(
+                              height: 32,
+                              child: Text(
+                                '\$',
+                                style: TextStyle(
+                                  fontSize: 24, // Adjust font size as needed
+                                  fontWeight: FontWeight
+                                      .bold, // Adjust font weight if necessary
+                                  color: Color.fromARGB(255, 31, 84,
+                                      33), // Adjust color if needed
+                                ),
+                              )),
+                          const SizedBox(width: 4),
                           Text(
                             plantList[widget.plantId]
                                 .price
                                 .toString()
-                                .farsiNumber,
+                                .englishNumber,
                             style: TextStyle(
                                 color: Constants.blackColor,
-                                fontFamily: 'Lalezar',
+                                fontFamily: 'Verdana',
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -217,13 +223,13 @@ class _DetailPageState extends State<DetailPage> {
                             plantFeature: plantList[widget.plantId]
                                 .humidity
                                 .toString()
-                                .farsiNumber,
+                                .englishNumber,
                           ),
                           PlantFeature(
                             title: 'Temperature',
                             plantFeature: plantList[widget.plantId]
                                 .temperature
-                                .farsiNumber,
+                                .englishNumber,
                           ),
                         ],
                       ),
@@ -360,7 +366,7 @@ class _DetailPageState extends State<DetailPage> {
                       'Add to Cart',
                       style: TextStyle(
                         color: Colors.white,
-                        fontFamily: 'Lalezar',
+                        fontFamily: 'Verdana',
                         fontSize: 18,
                       ),
                     ),
@@ -393,7 +399,7 @@ class PlantFeature extends StatelessWidget {
           title,
           style: TextStyle(
               color: Constants.blackColor,
-              fontFamily: 'Lalezar',
+              fontFamily: 'Verdana',
               fontSize: 18,
               fontWeight: FontWeight.bold),
         ),
@@ -401,7 +407,7 @@ class PlantFeature extends StatelessWidget {
           plantFeature,
           style: TextStyle(
               color: Constants.primaryColor,
-              fontFamily: 'Lalezar',
+              fontFamily: 'Verdana',
               fontSize: 18,
               fontWeight: FontWeight.bold),
         ),

@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                 physics: const BouncingScrollPhysics(),
                 itemCount: _plantList.length,
                 scrollDirection: Axis.horizontal,
-                reverse: true,
+                reverse: false,
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
@@ -135,12 +135,12 @@ class _HomePageState extends State<HomePage> {
                             child: DetailPage(
                               plantId: _plantList[index].plantId,
                             ),
-                            type: PageTransitionType.rightToLeft),
+                            type: PageTransitionType.leftToRight),
                       );
                     },
                     child: Container(
                       width: 200,
-                      margin: const EdgeInsets.symmetric(horizontal: 18),
+                      margin: const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         color: Constants.primaryColor.withOpacity(0.8),
                         borderRadius: BorderRadius.circular(20),
@@ -185,30 +185,30 @@ class _HomePageState extends State<HomePage> {
                             child: Image.asset(_plantList[index].imageURL),
                           ),
                           Positioned(
-                            left: 20,
+                            left: 10,
                             bottom: 15,
                             child: Container(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 1),
                               decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20),
+                                color: Color.fromARGB(222, 224, 230, 235),
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               child: Text(
                                 r'$ ' +
                                     _plantList[index]
                                         .price
                                         .toString()
-                                        .farsiNumber,
+                                        .englishNumber,
                                 style: TextStyle(
                                     color: Constants.primaryColor,
                                     fontSize: 16,
-                                    fontFamily: 'Lalezar'),
+                                    fontFamily: 'Verdana'),
                               ),
                             ),
                           ),
                           Positioned(
-                            right: 20,
+                            right: 10,
                             bottom: 15,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
@@ -226,7 +226,7 @@ class _HomePageState extends State<HomePage> {
                                   style: const TextStyle(
                                       fontFamily: 'Arial',
                                       color: Colors.white70,
-                                      fontSize: 16,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.bold),
                                 ),
                               ],
@@ -244,7 +244,7 @@ class _HomePageState extends State<HomePage> {
               alignment: Alignment.centerRight,
               padding: const EdgeInsets.only(right: 18, bottom: 15, top: 20),
               child: const Text(
-                'New Plant',
+                'Available plants',
                 style: TextStyle(
                   fontFamily: 'Arial',
                   fontSize: 18,
@@ -255,10 +255,10 @@ class _HomePageState extends State<HomePage> {
             // Product Two
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 18),
-              height: size.height * 0.3,
+              height: size.height * 0.4,
               child: ListView.builder(
                 physics: const BouncingScrollPhysics(),
-                itemCount: _plantList.length,
+                itemCount: _plantList.length - 1,
                 itemBuilder: (context, index) {
                   return NewPlantWidget(plantList: _plantList, index: index);
                 },

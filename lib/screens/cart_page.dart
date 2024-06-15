@@ -97,12 +97,12 @@ class _CartPageState extends State<CartPage> {
                             ),
                             const SizedBox(width: 5),
                             Text(
-                              totalPrice.toString().farsiNumber,
+                              totalPrice.toString().englishNumber,
                               style: TextStyle(
                                 color: Constants.primaryColor,
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'Lalezar',
+                                fontFamily: 'Verdana',
                               ),
                             ),
                           ],
@@ -111,7 +111,7 @@ class _CartPageState extends State<CartPage> {
                           'جمع کل',
                           style: TextStyle(
                             fontSize: 20,
-                            fontFamily: 'Lalezar',
+                            fontFamily: 'Verdana',
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),

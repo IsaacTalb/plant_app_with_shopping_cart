@@ -43,17 +43,26 @@ class NewPlantWidget extends StatelessWidget {
           children: [
             Row(
               children: [
-                SizedBox(
-                    height: 20,
-                    child: Image.asset('assets/images/PriceUnit-green.png')),
+                const SizedBox(
+                    height: 32,
+                    child: Text(
+                      '\$',
+                      style: TextStyle(
+                        fontSize: 22, // Adjust font size as needed
+                        fontWeight:
+                            FontWeight.bold, // Adjust font weight if necessary
+                        color: Color.fromARGB(
+                            255, 31, 84, 33), // Adjust color if needed
+                      ),
+                    )),
                 const SizedBox(width: 5),
                 Text(
-                  _plantList[index].price.toString().farsiNumber,
+                  _plantList[index].price.toString().englishNumber,
                   style: TextStyle(
                       color: Constants.primaryColor,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'Lalezar'),
+                      fontFamily: 'Verdana'),
                 ),
               ],
             ),
